@@ -11,7 +11,7 @@ const Navbar = () => {
             <nav className="bg-white border-gray-200 shadow-md shadow-gray-200 py-2.5 :bg-gray-900">
                 <div className="flex flex-wrap items-center justify-between max-w-7xl px-4 mx-auto">
                     <a href="/" className="flex items-center">
-                        <img src="/yes-image.jpg" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
+                        <img src="yes-image.jpg" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
                         <span className="self-center text-xl font-semibold whitespace-nowrap text-green-600 dark:text-green-400">Yes-Fidelity-Multipurpose</span>
                     </a>
                     <div className="flex items-center lg:order-2">
