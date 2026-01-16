@@ -20,6 +20,12 @@ const recyclingMaterials = [
         description: 'Do you think of your empty soda cans and food cans as a natural resource? They are. We currently discard millions of tons of aluminum each year.',
         image: '/imgi.jpg',
     },
+    {
+        badge: 'Plastic Waste',
+        title: 'PE',
+        description: 'Polyethylene (PE) is a common plastic used in packaging, containers, and various products. It is recyclable and widely processed for reuse.',
+        image: '/PE.jpeg',
+    },
 
 ];
 
