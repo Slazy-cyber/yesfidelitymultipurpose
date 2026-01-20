@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import { Home } from 'lucide-react';
 import RecycleCards from '../components/RecycleCard';
@@ -67,15 +68,15 @@ const Recycling = () => {
           </p>
 
           {/* CTA Button */}
-          <a
-            href="/enquiry"
+          <Link
+            to="/enquiry"
             className="inline-flex items-center gap-3 px-10 py-5 bg-green-600 text-white font-semibold text-lg rounded-full hover:bg-green-700 transition shadow-lg hover:shadow-xl"
           >
             Enquire Now
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
       <RecycleCards />
@@ -151,15 +152,15 @@ const Recycling = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <a
-                href="/enquiry"
+              <Link
+                to="/enquiry"
                 className="inline-flex items-center gap-3 px-10 py-5 bg-green-600 text-white font-semibold text-lg rounded-full hover:bg-green-700 transition shadow-lg hover:shadow-xl"
               >
                 Request Quote
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
 
               {/* <a
                 href="/categor"

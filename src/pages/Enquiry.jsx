@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowDown, Info, Shield, Clock, CheckCircle } from 'lucide-react';
 
 const Enquiry = () => {
@@ -86,7 +87,7 @@ const Enquiry = () => {
                     {/* Breadcrumb */}
                     <div className="container mx-auto px-6 pt-8">
                         <nav className="text-sm text-green-100">
-                            <a href="/" className="text-green-200 hover:underline">Home</a>
+                            <Link to="/" className="text-green-200 hover:underline">Home</Link>
                             <span className="mx-2">›</span>
                             <span className="text-white">Order & Enquiry</span>
                         </nav>

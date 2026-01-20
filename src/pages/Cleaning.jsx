@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import { Home } from 'lucide-react';
 import Footer from '../components/Footer';
@@ -33,15 +34,15 @@ const Cleaning = () => {
                     </p>
 
                     {/* CTA Button */}
-                    <a
-                        href="/enquiry"
+                    <Link
+                        to="/enquiry"
                         className="inline-flex items-center gap-3 px-10 py-5 bg-green-600 text-white font-semibold text-lg rounded-full hover:bg-green-700 transition shadow-lg hover:shadow-xl"
                     >
                         Enquire Now
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                    </a>
+                    </Link>
                 </div>
             </section>
 
