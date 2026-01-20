@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FaTrashAlt, FaRecycle, FaSeedling, FaEnvelope } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -10,10 +11,10 @@ const Navbar = () => {
         <>
             <nav className="bg-white border-gray-200 shadow-md shadow-gray-200 py-2.5 :bg-gray-900">
                 <div className="flex flex-wrap items-center justify-between max-w-7xl px-4 mx-auto">
-                    <a href="/" className="flex items-center">
+                    <Link to="/" className="flex items-center">
                         <img src="yes-image.jpg" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
                         <span className="self-center text-xl font-semibold whitespace-nowrap text-green-600 dark:text-green-400">Yes-Fidelity-Multipurpose</span>
-                    </a>
+                    </Link>
                     <div className="flex items-center lg:order-2">
                         <div className="hidden mt-2 mr-4 sm:inline-block">
                             <span></span>
@@ -45,44 +46,44 @@ const Navbar = () => {
                     >
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <a href="/cleaning"
+                                <Link to="/cleaning"
                                     className="block py-2 pl-3 pr-4 text-green-700 bg-transparent rounded lg:bg-transparent lg:text-green-700 lg:p-0 dark:text-green-400"
                                     aria-current="page">
                                     <span className="inline-flex items-center gap-2">
                                         <FaTrashAlt className="w-4 h-4" aria-hidden="true" />
                                         <span>Cleaning & Waste</span>
                                     </span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/recycling"
+                                <Link to="/recycling"
                                     className="block py-2 pl-3 pr-4 text-green-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-800 lg:p-0 dark:text-green-400 lg:dark:hover:text-green-300 dark:hover:bg-gray-700 dark:hover:text-green-300 lg:dark:hover:bg-transparent dark:border-gray-700">
                                     <span className="inline-flex items-center gap-2">
                                         <FaRecycle className="w-4 h-4" aria-hidden="true" />
                                         <span>Recyclable Materials</span>
                                     </span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/agricultural"
+                                <Link to="/agricultural"
                                     className="block py-2 pl-3 pr-4 text-green-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-800 lg:p-0 dark:text-green-400 lg:dark:hover:text-green-300 dark:hover:bg-gray-700 dark:hover:text-green-300 lg:dark:hover:bg-transparent dark:border-gray-700">
                                     <span className="inline-flex items-center gap-2">
                                         <FaSeedling className="w-4 h-4" aria-hidden="true" />
                                         <span>Agricultural Products</span>
                                     </span>
-                                </a>
+                                </Link>
                             </li>
 
 
 
                             <li>
-                                <a href="/contact"
+                                <Link to="/contact"
                                     className="block py-2 pl-3 pr-4 text-green-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-800 lg:p-0 dark:text-green-400 lg:dark:hover:text-green-300 dark:hover:bg-gray-700 dark:hover:text-green-300 lg:dark:hover:bg-transparent dark:border-gray-700">
                                     <span className="inline-flex items-center gap-2">
                                         <FaEnvelope className="w-4 h-4" aria-hidden="true" />
                                         <span>Contact</span>
                                     </span>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
